@@ -1,3 +1,3 @@
 Spree::Core::Engine.routes.draw do
-  # Add your extension routes here
+  match '/orders/:id/reorder' => 'orders#reorder', :via => :get, :as => :reorder_order
 end
