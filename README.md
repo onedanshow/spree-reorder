@@ -1,21 +1,9 @@
 SpreeReorder
 ============
 
-Introduction goes here.
+This is just a simple extension to add a "Reorder" button to the Orders show view. When a user presses it, all of the line items from the past order are added to his/her cart so he/she can start the checkout process.
+
+I'll add more functionality as needed, but this mainly was an experiment to play with writing a Spree extension.
 
 
-Example
-=======
-
-Example goes here.
-
-Testing
--------
-
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
-
-    $ bundle
-    $ bundle exec rake test_app
-    $ bundle exec rspec spec
-
-Copyright (c) 2013 [name of extension creator], released under the New BSD License
+Copyright (c) 2013 Daniel Dixon, released under the New BSD License
