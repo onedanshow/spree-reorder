@@ -2,10 +2,10 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_reorder'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.summary     = 'Simply adds a Reorder button to the Order show view.'
   s.description = 'Simply adds a Reorder button to the Order show view.'
-  s.required_ruby_version = '>= 1.8.7'
+  s.required_ruby_version = '>= 1.9.2'
 
   s.author    = 'Daniel Dixon'
   s.email     = 'code@danieldixon.com'
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 1.3.2'
+  s.add_dependency 'spree_frontend', '~> 2.0.0'
 
   #s.add_development_dependency 'capybara', '~> 1.1.2'
   #s.add_development_dependency 'coffee-rails'
