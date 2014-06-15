@@ -2,7 +2,7 @@ Spree::OrdersController.class_eval do
 
   # DD: stolen from orders_controller on Spree Core
   def reorder
-    populator = Spree::OrderPopulator.new(current_order(true), current_currency)
+    populator = Spree::OrderPopulator.new(current_order(create_order_if_necessary: true), current_currency)
     order = Spree::Order.where( number: params[:id] ).first
 
 =begin
