@@ -16,8 +16,6 @@ Spree::OrdersController.class_eval do
 =end
 
     if order.line_items.inject(true){|bool,li| populator.populate( li.variant.id, li.quantity  ) }
-      fire_event('spree.cart.add')
-      fire_event('spree.order.contents_changed')
       respond_with(@order) do |format|
         format.html { redirect_to cart_path }
       end
